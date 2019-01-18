@@ -26,23 +26,60 @@
       font-size:14px;
       letter-spacing:1px;
     }
+    .company-link{
+      color:black;
+      font-weight:bold;
+      font-size:14px;
+    }
     .label-custom{
       line-height:18px;
       margin:2px;
       white-space: pre-wrap;
       text-align:left;
     }
+    .label-custom-2{
+      line-height: 20px;
+      margin: 2px 5px;
+      padding-top: 7px;
+      white-space: pre-wrap;
+      text-align:left;
+    }
+    .label-contact-provider{
+       width:100px;
+       background-color: #f4f4f4;
+       color: #343434;
+       text-align:center;
+       margin:5px 10px 10px 0;
+       font-size:14px;
+       letter-spacing:0.5px;
+    }
+    .label-experience-period{
+       width:120px;
+       background-color: #f4f4f4;
+       color: #343434;
+       text-align:center;
+       margin:5px 10px 10px 0;
+    }
     .label-education{
-      background-color: #cbeefe;
-      color: #343434;
+       background-color: #fff;
+       color: #343434;
+       font-weight:100;
+       letter-spacing:0.5px;
+       font-size:14px;
     }
     .label-libs{
       background-color: #edf9ee;
       color: #343434;
+      font-weight:100;
     }
     .label-role{
       background-color: #eee2fc;
       color: #343434;
+    }
+    .label-experience-role{
+      background-color: #f4f4f4;
+      color: #343434;
+      margin:5px 0;
     }
     .label-members{
       background-color: #edf9ee;
@@ -51,7 +88,10 @@
     .label-period{
       background-color: #edf9ee;
       color: #343434;
-      margin:5px;
+    }
+    .label-remote{
+      background-color: #cbeefe;
+      color: #343434;
     }
   </style>
 </head>
@@ -75,226 +115,276 @@
 	<div class="page-content">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-3 col-lg-push-3 col-md-12">
+				<div class="col-lg-4 col-lg-push-4 col-md-12">
           <div AVATAR>
             <section class="box-typical">
               <div class="profile-card">
                 <div class="profile-card-photo">
                   <img src="img/avatar.png" alt=""/>
                 </div>
-                <div class="profile-card-name">Vladislav P.</div>
-                <div class="profile-card-status">Веб-разработчик</div>
+                <div class="profile-card-name" style="font-weight:bold;font-size:18px;">Vladislav P.</div>
+                <div class="profile-card-status" style="font-weight:100;font-size:16px;">Веб-разработчик</div>
               </div><!--.profile-card-->
-
               <div class="profile-statistic tbl">
                 <div class="tbl-row">
                   <div class="tbl-cell">
-                    <span class="label label-pill label-success"><b>8 лет</b></span><br>
-                    коммерческого опыта
+                    <span class="label label-pill label-experience-period" style="font-size:14px;"><b>7 лет</b></span><br>
+                    <span style="font-weight:100;font-size:16px;">коммерческого опыта</span>
                   </div>
                 </div>
               </div>
             </section>
           </div>
           <div CONTACTS
-            <section class="box-typical">
-              <ul class="profile-links-list">
+            <section class="box-typical" style="padding-top:6px;">
+              <ul class="profile-links-list" style="margin-left:10px;">
                 <li class="nowrap">
-                  <i class="font-icon font-icon-github" style="color: black;"></i>
-                  <a href="https://github.com/aa0z" target="_blank">github.com/aa0z</a>
+                  <a href="mailto:messageforvlad@gmail.com?subject=Job">
+                    <span class="label label-custom-2 label-contact-provider"><i class="font-icon glyphicon glyphicon-envelope"></i>Gmail:</span>
+                    <span style="font-weight:100;">messageforvlad</span>
+                  </a>
                 </li>
                 <li class="nowrap">
-                  <i class="font-icon glyphicon glyphicon-envelope" style="color: #d93025;"></i>
-                  <a href="mailto:messageforvlad@gmail.com?subject=Job">messageforvlad@gmail.com</a>
+                  <a href="https://github.com/aa0z" target="_blank">
+                    <span class="label label-custom-2 label-contact-provider"><i class="font-icon font-icon-github"></i>GitHub:</span>
+                    <span style="font-weight:100;">aa0z</span>
+                  </a>
                 </li>
                 <li class="nowrap">
-                  <i class="font-icon glyphicon glyphicon-send" style="color: #00a8ff;"></i>
-                  <a href="https://t.me/aa01z" target="_blank">aa01z</a>
+                  <a href="https://t.me/aa01z" target="_blank">
+                    <span class="label label-custom-2 label-contact-provider"><i class="font-icon glyphicon glyphicon-send"></i>Telegram:</span>
+                    <span style="font-weight:100;">aa01z</span>
+                  </a>
                 </li>
                 <li class="divider hidden"></li>
-                <li class="hidden">
-                  <i class="font-icon font-icon-pdf-fill"></i>
-                  <a href="#">cv.pdf</a>
-                </li>
               </ul>
             </section><!--.box-typical-->
           </div>
-          <div FRAMEWORKS>
+          <div EXPERIENCE>
             <section class="box-typical">
-              <div class="m-a text-center">
-                <b style="letter-spacing:1px;">FRAMEWORKS:</b>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-success progress-height progress-font" style="width: 95%;">
-                  Laravel
+              <header class="profile-info-item-header" style="line-height:50px;border-bottom: solid 1px #d8e2e7;">
+                <i class="font-icon font-icon-case" style="opacity:0.5;margin:18px;"></i>
+                <span style="letter-spacing:1px;"><b>ОПЫТ РАБОТЫ</b></span>
+              </header>
+              <article class="profile-info-item p-t" style="margin-left:0px;">
+                <ul class="exp-timeline">
+                  <li class="exp-timeline-item">
+                    <div class="dot"></div>
+                    <div class="tbl">
+                      <div class="tbl-row">
+                        <div class="tbl-cell">
+                          <div class="exp-timeline-range"> 2018 </div>
+                          <div class="m-t">
+                            <a class="company-link">CARGOLOGIC</a><br>
+                            <span class="label label-education" style="padding-left:0;">Software engineer</span>
+                          </div>
+                          <div class="m-t">
+                            <a href="http://welhome.ru" class="company-link">WELHOME</a><br>
+                            <span class="label label-education" style="padding-left:0;">Software architect</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="exp-timeline-item">
+                    <div class="dot"></div>
+                    <div class="tbl">
+                      <div class="tbl-row">
+                        <div class="tbl-cell">
+                          <div class="exp-timeline-range"> 2017 </div>
+                          <div class="m-t">
+                            <a href="https://ucs.ru" class="company-link">UCS ORIGINAL SOFTWARE</a><br>
+                            <span class="label label-education" style="padding-left:0;">Senior software engineer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="exp-timeline-item">
+                    <div class="dot"></div>
+                    <div class="tbl">
+                      <div class="tbl-row">
+                        <div class="tbl-cell">
+                          <div class="exp-timeline-range"> 2015 </div>
+                          <div class="m-t">
+                            <a href="https://iskrauraltel.ru/en/" class="company-link">ИСКРАУРАЛТЕЛ / ЛАНИТ</a><br>
+                            <span class="label label-education" style="padding-left:0;">Software engineer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="exp-timeline-item">
+                    <div class="dot"></div>
+                    <div class="tbl">
+                      <div class="tbl-row">
+                        <div class="tbl-cell">
+                          <div class="exp-timeline-range"> 2014 </div>
+                          <div class="m-t">
+                            <a href="https://qbfin.ru" class="company-link">QB FINANCE</a><br>
+                            <span class="label label-education" style="padding-left:0;">Software engineer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="exp-timeline-item">
+                    <div class="dot"></div>
+                    <div class="tbl">
+                      <div class="tbl-row">
+                        <div class="tbl-cell">
+                          <div class="exp-timeline-range"> 2012 </div>
+                          <div class="m-t">
+                            <span style="color:black;" class="company-link">ТЕМА-ИНВЕСТ</span><br>
+                            <span class="label label-education" style="padding-left:0;">Software engineer</span><br>
+                            <span class="label label-education" style="padding-left:0;">Junior software engineer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="exp-timeline-item">
+                    <div class="dot"></div>
+                    <div class="tbl">
+                      <div class="tbl-row">
+                        <div class="tbl-cell">
+                          <div class="exp-timeline-range"> 2010 </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </article><!--.profile-info-item-->
+            </section>
+          </div>
+          <div EDUCATION-SM>
+            <section class="box-typical">
+              <header class="profile-info-item-header" style="line-height:50px;border-bottom: solid 1px #d8e2e7;">
+                <i class="font-icon font-icon-award" style="opacity:0.5;margin:18px;"></i>
+                <span style="letter-spacing:1px;"><b>ОБРАЗОВАНИЕ</b></span>
+              </header>
+              <div style="margin:15px 10px;font-size:14px;">
+                <div class="label-education m-t">
+                  <div class="col-10 pull-left text-left">ЛГУ. Менеджмент организаций</div>
+                  <div class="col-2 pull-right text-right">2010</div>
+                  <div class="clearfix"></div>
                 </div>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-success progress-height progress-font" style="width: 95%;">
-                  VueJS
+                <div class="label-education m-t">
+                  <div class="col-10 pull-left text-left">JavaScript</div>
+                  <div class="col-2 pull-right text-right">2010</div>
+                  <div class="clearfix"></div>
                 </div>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-success progress-height progress-font" style="width: 90%;">
-                  Zend Framework
+                <div class="label-education m-t">
+                  <div class="col-10 pull-left text-left">JavaScript. Advanced</div>
+                  <div class="col-2 pull-right text-right">2010</div>
+                  <div class="clearfix"></div>
                 </div>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-success progress-height progress-font" style="width: 90%;">
-                  ReactJS
+                <div class="label-education m-t">
+                  <div class="col-10 pull-left text-left">HTML&CSS</div>
+                  <div class="col-2 pull-right text-right">2010</div>
+                  <div class="clearfix"></div>
                 </div>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-success progress-height progress-font" style="width: 80%;">
-                  <span>NodeJS <i class="fa fa-long-arrow-right"></i></span>
+                <div class="label-education m-t">
+                  <div class="col-10 pull-left text-left">HTML&CSS. Advanced</div>
+                  <div class="col-2 pull-right text-right">2010</div>
+                  <div class="clearfix"></div>
                 </div>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-success progress-height progress-font" style="width: 80%;">
-                  <span>ExpressJS <i class="fa fa-long-arrow-right"></i></span>
+                <div class="label-education m-t">
+                  <div class="col-10 pull-left text-left">Веб-дизайн</div>
+                  <div class="col-2 pull-right text-right">2010</div>
+                  <div class="clearfix"></div>
                 </div>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-warning progress-height progress-font" style="width: 50%;">
-                  AngularJS
+                <div class="label-education m-t">
+                  <div class="col-10 pull-left text-left">Adobe photoshop</div>
+                  <div class="col-2 pull-right text-right">2010</div>
+                  <div class="clearfix"></div>
                 </div>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-warning progress-height progress-font" style="width: 40%;">
-                  Symfony
+                <div class="label-education m-t">
+                  <div class="col-10 pull-left text-left">PHP</div>
+                  <div class="col-2 pull-right text-right">2010</div>
+                  <div class="clearfix"></div>
                 </div>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-warning progress-height progress-font" style="width: 40%;">
-                  Yii
+                <div class="label-education m-t">
+                  <div class="col-10 pull-left text-left">PHP. Взаимодействие с MySQL</div>
+                  <div class="col-2 pull-right text-right">2010</div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="label-education m-t">
+                  <div class="col-10 pull-left text-left">MySQL</div>
+                  <div class="col-2 pull-right text-right">2015</div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="label-education m-t">
+                  <div class="col-10 pull-left text-left">Atlassian JIRA система управления проектами и задачами</div>
+                  <div class="col-2 pull-right text-right">2015</div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="label-education m-t">
+                  <div class="col-10 pull-left text-left">Психология. Секреты эффективной коммуникации для IT-специалистов</div>
+                  <div class="col-2 pull-right text-right">2015</div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="label-education m-t">
+                  <div class="col-10 pull-left text-left">Linux.Основы администрирования и безопасности</div>
+                  <div class="col-2 pull-right text-right">2016</div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="label-education m-t">
+                  <div class="col-10 pull-left text-left">Взаимодействие в сетях на основе TCP/IP</div>
+                  <div class="col-2 pull-right text-right">2016</div>
+                  <div class="clearfix"></div>
                 </div>
               </div>
             </section>
           </div>
-          <div PROGRAMMING LANGUAGES>
+          <div LIBRARIES>
             <section class="box-typical">
-              <div class="m-a text-center">
-                <b style="letter-spacing:1px;">PROGRAMMING LANGUAGES:</b>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-success progress-height progress-font" style="width: 95%;">
-                  PHP7
-                </div>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-success progress-height progress-font" style="width: 95%;">
-                  HTML5
-                </div>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-success progress-height progress-font" style="width: 70%;">
-                  <span>ES2017 <i class="fa fa-long-arrow-right"></i></span>
-                </div>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-success progress-height progress-font" style="width: 70%;">
-                  <span>SQL <i class="fa fa-long-arrow-right"></i></span>
-                </div>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-warning progress-height progress-font" style="width: 40%;">
-                  GraphQL
-                </div>
-              </div>
-            </section>
-          </div>
-          <div LANGUAGES>
-            <section class="box-typical">
-              <div class="m-a text-center">
-                <b style="letter-spacing:1px;">LANGUAGES:</b>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-success progress-height progress-font" style="width: 95%;">
-                  Russian
-                </div>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-success progress-height progress-font" style="width: 60%;">
-                  <span>English <i class="fa fa-long-arrow-right"></i></span>
-                </div>
-              </div>
-            </section>
-          </div>
-          <div SOFT SKILLS>
-            <section class="box-typical">
-              <div class="m-a text-center">
-                <b style="letter-spacing:1px;">SOFT SKILLS:</b>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-success progress-height progress-font" style="width: 100%;">
-                  Организованный
-                </div>
-              </div>
-              <div class="progress m-a progress-height">
-                <div class="progress-bar progress-success progress-height progress-font" style="width: 100%;">
-                  Дружелюбный
-                </div>
-              </div>
-            </section>
-          </div>
-          <div LIBRARIES class="hidden">
-            <section class="box-typical">
-              <div class="m-a text-center">
+              <header class="profile-info-item-header" style="line-height:50px;border-bottom: solid 1px #d8e2e7;">
+                <i class="font-icon font-icon-server" style="opacity:0.5;margin:18px;"></i>
+                <span style="letter-spacing:1px;"><b>ТЕХНОЛОГИИ</b></span>
+              </header>
+              <div style="margin:15px 20px;">
+                <span class="label label-libs label-custom">VueJS</span>
                 <span class="label label-libs label-custom">Vuex</span>
-                <span class="label label-libs label-custom">NuxtJS</span>
-                <span class="label label-libs label-custom">Vue-router</span>
-                <span class="label label-libs label-custom">Vue-loader</span>
-                <span class="label label-libs label-custom">React</span>
-                <span class="label label-libs label-custom">Redux</span>
-                <span class="label label-libs label-custom">Blueprint</span>
-                <span class="label label-libs label-custom">Vuetify</span>
-                <span class="label label-libs label-custom">MySQL</span>
-                <span class="label label-libs label-custom">MariaDB</span>
-                <span class="label label-libs label-custom">SQLite</span>
+                <span class="label label-libs label-custom">ReactJS</span>
+                <span class="label label-libs label-custom">HTML5</span>
+                <span class="label label-libs label-custom">UX/UI</span>
+                <span class="label label-libs label-custom">Laravel</span>
+                <span class="label label-libs label-custom">ExpressJS</span>
+                <span class="label label-libs label-custom">NodeJS</span>
+                <span class="label label-libs label-custom">Zend Framework</span>
                 <span class="label label-libs label-custom">PostgreSQL</span>
+                <span class="label label-libs label-custom">MySQL</span>
                 <span class="label label-libs label-custom">NoSQL</span>
                 <span class="label label-libs label-custom">MongoDB</span>
+                <span class="label label-libs label-custom">Redis</span>
+                <span class="label label-libs label-custom">RabbitMQ</span>
                 <span class="label label-libs label-custom">Doctrine</span>
                 <span class="label label-libs label-custom">Eloquent</span>
                 <span class="label label-libs label-custom">Knex.js</span>
-                <span class="label label-libs label-custom">Redis</span>
-                <span class="label label-libs label-custom">RabbitMQ</span>
                 <span class="label label-libs label-custom">JSON-RPC</span>
                 <span class="label label-libs label-custom">JSON-API</span>
                 <span class="label label-libs label-custom">GraphQL</span>
+                <span class="label label-libs label-custom">Prisma</span>
                 <span class="label label-libs label-custom">Apollo</span>
                 <span class="label label-libs label-custom">Websocket</span>
                 <span class="label label-libs label-custom">WebRTC</span>
-                <span class="label label-libs label-custom">Asterisk</span>
-                <span class="label label-libs label-custom">Socket.io</span>
-                <span class="label label-libs label-custom">Strongloop</span>
                 <span class="label label-libs label-custom">Linux</span>
                 <span class="label label-libs label-custom">Docker</span>
                 <span class="label label-libs label-custom">Docker-compose</span>
                 <span class="label label-libs label-custom">Git</span>
                 <span class="label label-libs label-custom">AWS</span>
-                <span class="label label-libs label-custom">Nginx</span>
-                <span class="label label-libs label-custom">Php-fpm</span>
                 <span class="label label-libs label-custom">Composer</span>
                 <span class="label label-libs label-custom">Npm</span>
                 <span class="label label-libs label-custom">Yarn</span>
                 <span class="label label-libs label-custom">Cordova</span>
                 <span class="label label-libs label-custom">Webpack</span>
-                <span class="label label-libs label-custom">Silex</span>
-                <span class="label label-libs label-custom">Lumen</span>
-                <span class="label label-libs label-custom">Twig</span>
-                <span class="label label-libs label-custom">Blade</span>
-                <span class="label label-libs label-custom">Less</span>
-                <span class="label label-libs label-custom">Sass</span>
-                <span class="label label-libs label-custom">Bitbucket</span>
-                <span class="label label-libs label-custom">Jira</span>
-                <span class="label label-libs label-custom">Gitlab</span>
               </div>
             </section>
           </div>
 				</div><!--.col- -->
-        <div class="col-lg-9 col-lg-push-9 col-md-12">
-          <div EDUCATION>
+        <div class="col-lg-8 col-lg-push-8 col-md-12">
+          <div EDUCATION class="hidden">
   					<section class="box-typical">
               <header class="profile-info-item-header" style="line-height:50px;border-bottom: solid 1px #d8e2e7;">
                 <i class="font-icon font-icon-award" style="opacity:0.5;margin:18px;"></i>
@@ -403,72 +493,6 @@
   						</article><!--.profile-info-item-->
   					</section><!--.box-typical-->
           </div>
-          <div EXPERIENCE>
-            <section class="box-typical">
-              <header class="profile-info-item-header" style="line-height:50px;border-bottom: solid 1px #d8e2e7;">
-                <i class="font-icon font-icon-case" style="opacity:0.5;margin:18px;"></i>
-                <span style="letter-spacing:1px;"><b>ОПЫТ РАБОТЫ</b></span>
-              </header>
-              <article class="profile-info-item p-t">
-                <ul class="exp-timeline">
-                  <li class="exp-timeline-item">
-                    <div class="dot"></div>
-                    <div class="tbl">
-                      <div class="tbl-row">
-                        <div class="tbl-cell">
-                          <div class="exp-timeline-range">2015-2017 <a href="https://ucs.ru">UCS ORIGINAL SOFTWARE</a></div>
-                          <div class="exp-timeline-status"><span class="label label-role">Senior software engineer</span></div>
-                        </div>
-                        <div class="tbl-cell tbl-cell-logo">
-                          <a href="https://ucs.ru"><img src="img/logo/ucs2.png" alt="" width="80"></a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="exp-timeline-item">
-                    <div class="dot"></div>
-                    <div class="tbl">
-                      <div class="tbl-row">
-                        <div class="tbl-cell">
-                          <div class="exp-timeline-range">2015 <a href="https://iskrauraltel.ru/en/">ИСКРАУРАЛТЕЛ / ЛАНИТ</a></div>
-                          <div class="exp-timeline-status"><span class="label label-role">Software engineer</span> <span class="label label-period">Удаленная работа</span></div>
-                        </div>
-                        <div class="tbl-cell tbl-cell-logo">
-                          <a href="https://www.reformagkh.ru"><img src="img/logo/lanit3.png" alt="" width="80"></a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="exp-timeline-item">
-                    <div class="dot"></div>
-                    <div class="tbl">
-                      <div class="tbl-row">
-                        <div class="tbl-cell">
-                          <div class="exp-timeline-range">2013-2015 <a href="https://qbfin.ru">QB FINANCE</a></div>
-                          <div class="exp-timeline-status"><span class="label label-role">Software engineer</span> </div>
-                        </div>
-                        <div class="tbl-cell tbl-cell-logo">
-                          <a href="https://qbfin.ru"><img src="img/logo/qbf.png" alt="" width="80"></a>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="exp-timeline-item">
-                    <div class="dot"></div>
-                    <div class="tbl">
-                      <div class="tbl-row">
-                        <div class="tbl-cell">
-                          <div class="exp-timeline-range">2010-2012 <span style="color:black;">ТЕМА-ИНВЕСТ</span></div>
-                          <div class="exp-timeline-status"><span class="label label-role">Software engineer</span> </div>
-                          <div class="exp-timeline-status"><span class="label label-role">Junior software engineer</span> </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </article><!--.profile-info-item-->
-            </section>
-          </div>
           <div PROJECTS>
             <section class="box-typical">
               <header class="profile-info-item-header" style="line-height:50px;">
@@ -508,8 +532,9 @@
                     <span class="label label-success">ReactJS</span>
                     <span class="label label-success">ExpressJS</span>
                     <span class="label label-success">GraphQL</span>
-                    <span class="label label-success">PostgreSQL</span>
+                    <span class="label label-success">Prisma</span>
                     <span class="label label-success">Apollo</span>
+                    <span class="label label-success">PostgreSQL</span>
                     <span class="label label-success">Realtime</span>
                     <span class="label label-success">Websocket</span>
                     <span class="label label-success">AWS</span>
