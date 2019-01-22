@@ -113,6 +113,9 @@
       background-color: #cbeefe;
       color: #343434;
     }
+		@media (max-width: 720px) {
+			.mobile-padding{ padding-left:0px;padding-right:0px; }
+		}
   </style>
 </head>
 <body>
@@ -135,7 +138,7 @@
 	<div class="page-content">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-4 col-lg-push-4 col-md-12">
+				<div class="col-lg-4 col-lg-push-4 col-md-12 mobile-padding">
           <div AVATAR>
             <section class="box-typical">
               <div class="profile-card">
@@ -403,7 +406,7 @@
             </section>
           </div>
 				</div><!--.col- -->
-        <div class="col-lg-8 col-lg-push-8 col-md-12">
+        <div class="col-lg-8 col-lg-push-8 col-md-12 mobile-padding">
           <div EDUCATION class="hidden">
   					<section class="box-typical">
               <header class="profile-info-item-header" style="line-height:50px;border-bottom: solid 1px #d8e2e7;">
