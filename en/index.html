@@ -6,14 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>VLADISLAV P. (FULLSTACK - WEB DEVELOPER | UI/UX DESIGNER | TEAM-LEAD)</title>
-	<link href="img/apple-touch-icon.png" rel="apple-touch-icon" type="image/png" sizes="180x180" />
-	<link href="img/favicon.ico" rel="shortcut icon" />
+	<link href="../img/apple-touch-icon.png" rel="apple-touch-icon" type="image/png" sizes="180x180" />
+	<link href="../img/favicon.ico" rel="shortcut icon" />
 	<link href="/img/favicon.png" rel="icon" type="image/png" />
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+	<link rel="stylesheet" href="../css/separate/vendor/slick.min.css">
 	<link rel="stylesheet" href="../css/separate/pages/profile.min.css">
 	<link rel="stylesheet" href="../css/lib/font-awesome/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/lib/bootstrap/bootstrap.min.css">
@@ -762,7 +763,7 @@
 									$("#more-projects").removeClass('hidden');
 								}
 							</script>
-							<button type="button" class="btn btn-sm btn-rounded btn-secondary" onclick="moreProjects();">MORE PROJECTS</button>
+							<button type="button" class="btn btn-sm btn-rounded btn-secondary m-b" onclick="moreProjects();">MORE PROJECTS</button>
 						</div>
 						<section id="more-projects" class="box-typical hidden">
 							<div class="friends-list stripped">
@@ -875,7 +876,75 @@
 								</div>
 							</div>
 						</section>
+						<section class="box-typical">
+							<header class="box-typical-header-sm">
+								UI/UX DESIGN
+								<div class="slider-arrs">
+									<button type="button" class="posts-slider-prev">
+										<i class="font-icon font-icon-arrow-left"></i>
+									</button>
+									<button type="button" class="posts-slider-next">
+										<i class="font-icon font-icon-arrow-right"></i>
+									</button>
+								</div>
+							</header>
+							<div class="posts-slider">
+								<div class="slide">
+									<article class="post-announce">
+										<div class="post-announce-pic">
+											<img src="../img/ui/1.png" alt="">
+										</div>
+									</article>
+								</div><!--.slide-->
+								<div class="slide">
+									<article class="post-announce">
+										<div class="post-announce-pic">
+											<img src="../img/ui/2.png" alt="">
+										</div>
+									</article>
+								</div><!--.slide-->
+								<div class="slide">
+									<article class="post-announce">
+										<div class="post-announce-pic">
+											<img src="../img/ui/3.png" alt="">
+										</div>
+										<div class="post-announce-date">
 
+										</div>
+									</article>
+								</div><!--.slide-->
+								<div class="slide">
+									<article class="post-announce">
+										<div class="post-announce-pic">
+											<img src="../img/ui/6.png" alt="">
+										</div>
+										<div class="post-announce-date">
+
+										</div>
+									</article>
+								</div><!--.slide-->
+								<div class="slide">
+									<article class="post-announce">
+										<div class="post-announce-pic">
+											<img src="../img/ui/4.png" alt="">
+										</div>
+										<div class="post-announce-date">
+
+										</div>
+									</article>
+								</div><!--.slide-->
+								<div class="slide">
+									<article class="post-announce">
+										<div class="post-announce-pic">
+											<img src="../img/ui/7.png" alt="">
+										</div>
+										<div class="post-announce-date">
+
+										</div>
+									</article>
+								</div><!--.slide-->
+							</div><!--.posts-slider-->
+						</section><!--.box-typical-->
 					</div>
 				</div>
 				<!--.col- -->
@@ -888,6 +957,60 @@
 
 	<script src="../js/lib/jquery/jquery-3.2.1.min.js"></script>
 	<script src="../js/lib/bootstrap/bootstrap.min.js"></script>
+	<script src="../js/lib/slick-carousel/slick.min.js"></script>
+	<script>
+		$(function () {
+
+			var postsSlider = $(".posts-slider");
+
+			postsSlider.slick({
+				slidesToShow: 4,
+				adaptiveHeight: true,
+				arrows: false,
+				responsive: [
+					{
+						breakpoint: 1700,
+						settings: {
+							slidesToShow: 3
+						}
+					},
+					{
+						breakpoint: 1350,
+						settings: {
+							slidesToShow: 2
+						}
+					},
+					{
+						breakpoint: 992,
+						settings: {
+							slidesToShow: 3
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 2
+						}
+					},
+					{
+						breakpoint: 500,
+						settings: {
+							slidesToShow: 1
+						}
+					}
+				]
+			});
+
+			$('.posts-slider-prev').click(function(){
+				postsSlider.slick('slickPrev');
+			});
+
+			$('.posts-slider-next').click(function(){
+				postsSlider.slick('slickNext');
+			});
+
+		});
+	</script>
 </body>
 
 </html>
